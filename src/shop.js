@@ -4,6 +4,7 @@ import displayItems from "./displayItems.js";
 import setupStore from "./setupStore.js";
 import "./toggle.js";
 import addToCartDOM from "./addToCartDOM.js";
+import setupPrice from "./filter.js";
 
 const mainStore = function () {
   let cart = getStorageItem("cart");

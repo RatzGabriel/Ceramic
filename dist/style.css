@@ -66,11 +66,27 @@ nav {
 }
 
 .textHero {
-  color: white;
   text-align: center;
   font-family: "Kaushan Script", cursive;
   margin-top: 15rem;
   font-size: 5rem;
+  color: white;
+}
+
+.textHeroShop {
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-size: 5rem;
+  color: white;
+}
+
+.product-cart-btn {
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: rgb(167, 209, 218);
+  padding: 0 2em;
 }
 
 /* .textHeroAbout {
@@ -108,7 +124,7 @@ nav {
 
 .featured {
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .featured img {
@@ -240,7 +256,7 @@ nav {
   top: 0;
   right: -5%;
   position: fixed;
-  background-color: rgb(165, 171, 172);
+  background-color: rgb(167, 209, 218);
   color: white;
   bottom: 0;
   overflow-y: scroll;

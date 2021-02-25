@@ -3,6 +3,7 @@ import addToCart from "./addToCart.js";
 
 const displayItems = function (div, products) {
   const allProducts = div;
+  console.log("wyh", products);
   allProducts.innerHTML = products
     .map((item) => {
       return `<article class="product">
