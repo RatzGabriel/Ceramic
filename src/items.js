@@ -12,6 +12,7 @@ const data = [
   {
     title: "pic2",
     src: "./images/2.jpg",
+    src2: "./images/2.jpg",
     price: "999",
     featured: true,
     id: 2,
@@ -19,6 +20,7 @@ const data = [
   {
     title: "pic3",
     src: "./images/3.jpg",
+    src2: "./images/2.jpg",
     price: "999",
     featured: true,
     id: 3,
@@ -26,6 +28,7 @@ const data = [
   {
     title: "pic4",
     src: "./images/4.jpg",
+    src2: "./images/2.jpg",
     price: "999",
     featured: true,
     id: 4,
@@ -33,6 +36,7 @@ const data = [
   {
     title: "pic4",
     src: "./images/4.jpg",
+    src2: "./images/2.jpg",
     price: "999",
     featured: false,
     id: 5,
@@ -40,6 +44,7 @@ const data = [
   {
     title: "pic4",
     src: "./images/4.jpg",
+    src2: "./images/2.jpg",
     price: "999",
     featured: false,
     id: 6,
@@ -47,6 +52,7 @@ const data = [
   {
     title: "pic4",
     src: "./images/4.jpg",
+    src2: "./images/2.jpg",
     price: "999",
     featured: false,
     id: 7,
@@ -54,6 +60,7 @@ const data = [
   {
     title: "pic4",
     src: "./images/4.jpg",
+    src2: "./images/2.jpg",
     price: "999",
     featured: false,
     id: 8,
@@ -61,6 +68,7 @@ const data = [
   {
     title: "pic4",
     src: "./images/4.jpg",
+    src2: "./images/2.jpg",
     price: "999",
     featured: false,
     id: 9,
@@ -68,6 +76,7 @@ const data = [
   {
     title: "pic4",
     src: "./images/4.jpg",
+    src2: "./images/2.jpg",
     price: "999",
     featured: false,
     id: 10,
@@ -75,6 +84,7 @@ const data = [
   {
     title: "pic4",
     src: "./images/4.jpg",
+    src2: "./images/2.jpg",
     price: "999",
     featured: false,
     id: 11,
@@ -82,6 +92,7 @@ const data = [
   {
     title: "pic4",
     src: "./images/4.jpg",
+    src2: "./images/2.jpg",
     price: "999",
     featured: false,
     id: 12,
@@ -89,6 +100,7 @@ const data = [
   {
     title: "pic4",
     src: "./images/4.jpg",
+    src2: "./images/2.jpg",
     price: "999",
     featured: false,
     id: 13,
@@ -96,6 +108,7 @@ const data = [
   {
     title: "pic4",
     src: "./images/4.jpg",
+    src2: "./images/2.jpg",
     price: "999",
     featured: false,
     id: 14,

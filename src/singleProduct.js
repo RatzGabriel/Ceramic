@@ -15,17 +15,20 @@ cart.forEach((element) => {
 
 window.addEventListener("DOMContentLoaded", async function () {
   const urlID = window.location.search;
-  console.log(urlID);
+
   const regEx = /[0-9]+/;
   let newUrl = urlID.match(regEx).toString();
-  console.log("store?=", store);
+
   for (let i = 0; i < store.length; i++) {
     if (store[i].id == newUrl) {
-      console.log("jfidjf", store[i]);
       const title = getElement(".singleProduct-title");
       const image = getElement(".singleProduct-image");
       const price = getElement(".singleProduct-price");
       const button = getElement(".product-cart-btn");
+      const image2 = getElement("#picture2");
+      const h1text2 = getElement("#h1text2");
+      h1text2.innerText = store[i].title;
+      image2.src = store[i].src2;
       title.innerText = store[i].title;
       image.src = store[i].src;
       price.innerText = formatPrice(store[i].price);
