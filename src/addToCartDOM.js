@@ -26,6 +26,15 @@ const addToCartDOM = function ({ id, title, price, src, amount }) {
             </div>
   `;
   cartItemsDOM.appendChild(article);
+  function displayCartTotal() {
+    const cartTotalDOM = getElement(".cart-total");
+    let cart = getStorageItem("cart");
+    let total = cart.reduce((total, cartItem) => {
+      return (total += cartItem.price * cartItem.amount);
+    }, 0);
+    cartTotalDOM.textContent = `Total : ${formatPrice(total)} `;
+  }
+  displayCartTotal();
 };
 
 export default addToCartDOM;

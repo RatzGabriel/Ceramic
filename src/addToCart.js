@@ -5,10 +5,8 @@ import {
   setStorageItem,
 } from "./utils.js";
 import addToCartDOM from "./addToCartDOM.js";
-import openCart from "./toggle";
+import openCart from "./toggle.js";
 
-//shopping cart fertig stellen
-// all products page
 // einzelne product page
 //about page
 //

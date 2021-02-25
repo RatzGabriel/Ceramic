@@ -1,5 +1,5 @@
 import { getElement, formatPrice, getStorageItem } from "./utils.js";
-import addToCart from "./addToCart";
+import addToCart from "./addToCart.js";
 
 const displayItems = function (div, products) {
   const allProducts = div;
@@ -7,9 +7,10 @@ const displayItems = function (div, products) {
     .map((item) => {
       return `<article class="product">
         <div class="product-container">
-          <img src="${item.src}" class="product-img img" alt="${
-        item.title
-      }" />       
+          
+      <a href="singleProduct.html?id=${item.id}" class="product-icon">
+      <img src="${item.src}" class="product-img img" alt="${item.title}" />    
+    </a>  
           <div class="product-icons">           
             <button id="tes" class="product-cart-btn product-icon" data-id="${
               item.id
