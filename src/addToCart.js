@@ -7,7 +7,6 @@ import {
 import addToCartDOM from "./addToCartDOM.js";
 import openCart from "./toggle.js";
 
-// einzelne product page
 //about page
 //
 
@@ -16,6 +15,8 @@ const cartItemsDOM = getElement(".cart-items");
 const cartTotalDOM = getElement(".cart-total");
 
 export const addToCart = (id) => {
+  const cartOverlay = getElement(".cart-overlay");
+  cartOverlay.classList.add("show");
   let cart = getStorageItem("cart");
   let store = getStorageItem("store");
   let item = cart.find((cartItem) => cartItem.id == id);
@@ -32,6 +33,7 @@ export const addToCart = (id) => {
     setStorageItem("cart", cart);
   }
   displayCartTotal();
+  displayCartItemCount();
   // add one to the item count
   //   displayCartItemCount();
   //   // set cart in local storage
@@ -114,6 +116,7 @@ const init = function () {
       });
     }
     displayCartTotal();
+    displayCartItemCount();
   });
 };
 
@@ -124,6 +127,15 @@ function displayCartTotal() {
     return (total += cartItem.price * cartItem.amount);
   }, 0);
   cartTotalDOM.textContent = `Total : ${formatPrice(total)} `;
+}
+
+function displayCartItemCount() {
+  let cart = getStorageItem("cart");
+  const cartItemCountDOM = getElement(".cart-item-count");
+  const amount = cart.reduce((total, cartItem) => {
+    return (total += cartItem.amount);
+  }, 0);
+  cartItemCountDOM.textContent = amount;
 }
 
 init();

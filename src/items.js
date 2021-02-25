@@ -2,6 +2,9 @@ const data = [
   {
     title: "pic1",
     src: "./images/1.jpg",
+    src2: "./images/2.jpg",
+    src3: "./images/3.jpg",
+    src4: "./images/4.jpg",
     price: "999",
     featured: false,
     id: 1,

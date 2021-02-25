@@ -5,14 +5,17 @@ const addToCartDOM = function ({ id, title, price, src, amount }) {
   article.classList.add("cart-item");
   article.setAttribute("data-id", id);
   article.innerHTML = `
+  <div class="left-cart-item">
+  <h4 class="cart-item-name">${title}</h4>
     <img src="${src}"
               class="cart-item-img"
               alt="${title}"
             />  
+            <p class="cart-item-price">${formatPrice(price)}</p>
+            <button class="cart-item-remove-btn" data-id="${id}">remove</button>
+            </div>
             <div>
-              <h4 class="cart-item-name">${title}</h4>
-              <p class="cart-item-price">${formatPrice(price)}</p>
-              <button class="cart-item-remove-btn" data-id="${id}">remove</button>
+              
             </div>
           
             <div>

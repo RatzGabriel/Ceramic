@@ -15,7 +15,7 @@ const displayItems = function (div, products) {
             <button id="tes" class="product-cart-btn product-icon" data-id="${
               item.id
             }">
-              Shop now
+              Add to Cart
             </button>
           </div>
         </div>

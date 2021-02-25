@@ -11,8 +11,6 @@ const mainStore = function () {
   const featuredDiv = getElement(".allProducts");
   displayItems(featuredDiv, store);
   cart.forEach((element) => {
-    console.log("allproductsCart", cart);
-    console.log("ele", typeof element);
     addToCartDOM(element);
   });
 };

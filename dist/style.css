@@ -73,29 +73,29 @@ nav {
   font-size: 5rem;
 }
 
-.textHeroAbout {
+/* .textHeroAbout {
   display: grid;
   place-content: center;
   color: white;
   text-align: center;
   font-family: "Kaushan Script", cursive;
   width: 50%;
-}
+} */
 
-.hero-containerAbout {
+/* .hero-containerAbout {
   height: 90vh;
   margin-top: -10vh;
   background-image: linear-gradient(#5e5b5b, white);
-}
-.headerVideo {
+} */
+/* .headerVideo {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
+} */
+/* 
 .textHeroAbout h1 {
   font-size: 6em;
-}
+} */
 
 .textHero p {
   font-size: 2rem;
@@ -117,15 +117,14 @@ nav {
   border-radius: 10%;
 }
 
-.searchFilter {
+/* .searchFilter {
   background-color: red;
   width: 10%;
   height: 100%;
-}
+} */
 
 .video-container {
   width: 50%;
-
   z-index: 1;
 }
 
@@ -161,6 +160,26 @@ nav {
 .video {
   height: 80%;
   width: 80%;
+}
+
+/* SinglePage */
+.productContainer {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.test {
+  height: 3px;
+}
+
+.singleProduct-image {
+}
+
+.searchFilter {
+  font-size: 0.4em;
+  color: black;
 }
 
 /* sidebar */
@@ -225,12 +244,13 @@ nav {
   color: white;
   bottom: 0;
   overflow-y: scroll;
+  display: flex;
 }
 
-.cart-header-text {
+/* .cart-header-text {
   margin: 2rem 0 0 2rem;
   font-size: 2rem;
-}
+} */
 
 .cart-overlay.show {
   z-index: 999;
@@ -243,17 +263,54 @@ nav {
   width: 7rem;
 }
 
+.cart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.cart-close {
+  background: transparent;
+  border: none;
+  left: 0.5em;
+  top: 0.5em;
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  z-index: 999;
+}
+
 .cart-overlay footer {
-  bottom: 0;
+  margin-top: 10rem;
+  text-align: center;
+  padding-bottom: 10rem;
+  font-size: 1.6rem;
+  color: red;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
 }
 
 .cart-items {
   display: flex;
   align-items: center;
-  margin-left: 3rem;
-  width: 70%;
-  margin: 3rem;
+  margin-top: 4rem;
   text-align: center;
+  flex-direction: column;
+}
+.cart-item-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cart-item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cart-items .buttonsUpDown {

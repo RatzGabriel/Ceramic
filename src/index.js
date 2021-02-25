@@ -13,6 +13,7 @@ let cart = getStorageItem("cart");
 let store = getStorageItem("store");
 
 const main = function () {
+  console.log(data);
   setupStore(data);
   let cart = getStorageItem("cart");
   let store = getStorageItem("store");

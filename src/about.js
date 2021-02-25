@@ -9,7 +9,5 @@ let cart = getStorageItem("cart");
 let store = getStorageItem("store");
 
 cart.forEach((element) => {
-  console.log("allproductsCart", cart);
-  console.log("ele", typeof element);
   addToCartDOM(element);
 });

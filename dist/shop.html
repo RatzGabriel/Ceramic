@@ -22,14 +22,24 @@
       <img class="logo" src="./images/testLogo.jpeg" alt="logo" />
       <button class="cartButton">
         <i class="fas fa-cart-arrow-down"></i>
-        <span class="cart-item-count">1</span>
+        <span class="cart-item-count"></span>
       </button>
     </nav>
 
     <div class="hero-container">
       <div class="textHero">
-        <h1 class="h1">Machua Peru</h1>
-        <p class="p">simply beautiful</p>
+       
+        <div class="searchFilter">
+          <form action="">
+            <div><label for="">Search by Name:</label> <input type="text" /></div>
+  
+            <div>
+              <label for="">Search by Price</label>
+              <input type="range" />
+              <p>9.99</p>
+            </div>
+          </form>
+        </div>
       </div>
       <section class="section featured">
         <div class="title">
@@ -58,9 +68,7 @@
         <button class="cart-close">
           <i class="fas fa-times"></i>
         </button>
-        <header>
-          <h3 class="text-slanted">your bag</h3>
-        </header>
+        
         <!-- cart items -->
         <div class="cart-items"></div>
         <!-- footer -->
