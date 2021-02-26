@@ -169,30 +169,6 @@ nav {
   font-size: 2em;
 }
 
-/* .textHeroAbout {
-  display: grid;
-  place-content: center;
-  color: white;
-  text-align: center;
-  font-family: "Kaushan Script", cursive;
-  width: 50%;
-} */
-
-/* .hero-containerAbout {
-  height: 90vh;
-  margin-top: -10vh;
-  background-image: linear-gradient(#5e5b5b, white);
-} */
-/* .headerVideo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-/* 
-.textHeroAbout h1 {
-  font-size: 6em;
-} */
-
 .cart-item-name {
   font-size: 2em;
   text-transform: uppercase;
@@ -284,9 +260,6 @@ nav {
 
 .test {
   height: 3px;
-}
-
-.singleProduct-image {
 }
 
 .searchFilter {
@@ -462,7 +435,6 @@ nav {
     padding: 0;
   }
   .cart {
-    background-color: red;
   }
   .cart-item-name {
     font-size: 2em;
@@ -553,5 +525,12 @@ nav {
 
   .singleProduct-image {
     width: 80%;
+  }
+
+  /* Checkout */
+
+  .container-checkout {
+    flex-direction: column;
+    margin-top: 60em;
   }
 }
