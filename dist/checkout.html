@@ -27,31 +27,36 @@
     </nav>
 
     <div class="hero-container">
-      <div class="textHeroShop">
-       
-        <div class="searchFilter">
-         
-            <div>
-              <label for="">Search by Price</label>
-              <input type="range" class="price-filter" min="0" value="50" max="100" />
-              <p class="price-value">9.99</p>
-            </div>
-          </form>
-        </div>
+      <div>
+        <form class="left-checkout" action="">
+          <label for="">First Name</label>
+          <input type="text" />
+          <label for="">Last Name</label>
+          <input type="text" />
+          <label for="">Email</label>
+          <input type="email" />
+          <label for="">Phone</label>
+          <input type="tel" />
+          <label for="">Adress Line 1</label>
+          <input type="text" />
+          <label for="">Adress Line 2</label>
+          <input type="text" />
+          <label for="">City</label>
+          <input type="text" />
+          <label for="">ZIP / Postal Code</label>
+          <input type="number" />
+          <label for="">Country</label>
+          <select name="country" id="country">
+            <option value="austria">Austria</option>
+            <option value="germany">other European Country</option>
+          </select>
+          <label for="">If other European Country please note here</label>
+          <input type="text" />
+        </form>
       </div>
-      <section class="section featured">
-        <div class="title">
-          
-        </div>
-        <div class="featured-center section-center"></div>
-        
-      </section>
-      <section class="all">
-        <div class="allProducts">
-          
-        </div>
+      <div class="right-checkout"></div>
+      <div class="finalCheckout"></div>
     </div>
-    
 
     <div class="sidebar-container">
       <div class="sidebar-container-links">
@@ -66,7 +71,7 @@
         <button class="cart-close">
           <i class="fas fa-times"></i>
         </button>
-        
+
         <!-- cart items -->
         <div class="cart-items"></div>
         <!-- footer -->
@@ -77,6 +82,6 @@
       </aside>
     </div>
 
-    <script type="module" src="../src/shop.js"></script>
+    <script type="module" src="../src/checkout.js"></script>
   </body>
 </html>

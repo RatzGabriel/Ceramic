@@ -77,6 +77,14 @@ nav {
   color: white;
 }
 
+/* Checkout */
+
+.left-checkout {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
 /* Shop */
 .textHeroShop {
   text-align: center;
