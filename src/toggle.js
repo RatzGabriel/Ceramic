@@ -25,8 +25,16 @@ const openCart = () => {
 const darkModeBtn = getElement(".darkModeBtn");
 darkModeBtn.addEventListener("click", function () {
   const heroContainer = getElement(".hero-container");
-  console.log(heroContainer);
   heroContainer.classList.toggle("dark");
+  darkModeBtn.classList.toggle("on");
+  console.log(darkModeBtn.innerText);
+  if (darkModeBtn.innerText == "Dark Mode") {
+    console.log("<<", darkModeBtn.innerText);
+    darkModeBtn.innerText = "Normal Mode";
+  } else if (darkModeBtn.innerText == "Normal Mode") {
+    console.log(">>>>>", darkModeBtn.innerText);
+    darkModeBtn.innerText = "Dark Mode";
+  }
 });
 
 export default {

@@ -48,3 +48,5 @@ window.addEventListener("DOMContentLoaded", async function () {
     }
   }
 });
+
+onload = "onload()";

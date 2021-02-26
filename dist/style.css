@@ -568,4 +568,15 @@ nav {
 
 .darkModeBtn {
   z-index: 999;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.5em 0.5em;
+  margin-left: 3em;
+  border-radius: 10%;
+}
+
+.on {
+  color: black;
+  background-color: white;
 }
