@@ -219,11 +219,6 @@ nav {
   margin-top: 3em;
 }
 
-.video-container {
-  width: 50%;
-  z-index: 1;
-}
-
 .all {
   display: flex;
   height: 50%;
@@ -255,10 +250,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 .video {
   height: 80%;
   width: 80%;
+  padding-top: 10em;
 }
 
 /* SinglePage */
