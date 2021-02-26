@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./dist/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -19,8 +19,7 @@
         <li class="linksPages"><a href="shop.html">Shop</a></li>
         <li class="linksPages"><a href="about.html">About</a></li>
       </div>
-      <img class="logo" src="./images/testLogo.jpeg" alt="logo" />
-      <button class="darkModeBtn">Dark Mode</button>
+      <img class="logo" src="./dist/images/testLogo.jpeg" alt="logo" />
       <button class="cartButton">
         <i class="fas fa-cart-arrow-down"></i>
         <span class="cart-item-count"></span>
@@ -28,18 +27,41 @@
     </nav>
 
     <div class="hero-container">
-      <div class="textHero">
-        <h1 class="h1">Machua Peru</h1>
-        <p class="p">simply beautiful</p>
+      <div class="container-checkout">
+        <form class="left-checkout" action="">
+          <label for="">First Name</label>
+          <input type="text" />
+          <label for="">Last Name</label>
+          <input type="text" />
+          <label for="">Email</label>
+          <input type="email" />
+          <label for="">Phone</label>
+          <input type="tel" />
+          <label for="">Adress Line 1</label>
+          <input type="text" />
+          <label for="">Adress Line 2</label>
+          <input type="text" />
+          <label for="">City</label>
+          <input type="text" />
+          <label for="">ZIP / Postal Code</label>
+          <input type="number" />
+          <label for="">Country</label>
+          <select name="country" id="country">
+            <option value="austria">Austria</option>
+            <option value="germany">other European Country</option>
+          </select>
+          <label for="">If other European Country please note here</label>
+          <input type="text" />
+        </form>
+        <div class="right-checkout">
+          
+         
+        </div>
+        <p class="total-amount">Total 19,99 Euro</p>
+        <button class="total-btn">Submit Order</button>
+        
       </div>
-      <section class="section featured">
-        <div class="featured-center section-center"></div>
-      </section>
 
-      <section class="all">
-        <div class="allProducts"></div>
-      </section>
-    </div>
 
     <div class="sidebar-container">
       <div class="sidebar-container-links">
@@ -60,13 +82,11 @@
         <!-- footer -->
         <footer>
           <h3 class="cart-total text-slanted"></h3>
-          <a href="checkout.html"
-            ><button class="cart-checkout btn">checkout</button></a
-          >
+          <button class="cart-checkout btn">checkout</button>
         </footer>
       </aside>
     </div>
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="./src/checkout.js"></script>
   </body>
 </html>
