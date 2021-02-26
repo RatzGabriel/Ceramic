@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <title>Machua Peru</title>
+  </head>
+  <body>
+    <nav>
+      <button class="hamburgerButton"><i class="fas fa-bars"></i></button>
+      <div class="linksPageContainer">
+        <li class="linksPages"><a href="index.html">Home</a></li>
+        <li class="linksPages"><a href="shop.html">Shop</a></li>
+        <li class="linksPages"><a href="about.html">About</a></li>
+      </div>
+      <img class="logo" src="./images/testLogo.jpeg" alt="logo" />
+      <button class="darkModeBtn">Dark Mode</button>
+      <button class="cartButton">
+        <i class="fas fa-cart-arrow-down"></i>
+        <span class="cart-item-count"></span>
+      </button>
+    </nav>
+
+    <div class="hero-container">
+      <div class="textHeroShop">
+       
+        <div class="searchFilter">
+         
+            <div class="filter">
+              <label for="">Search by Price</label>
+              <input type="range" class="price-filter" min="0" value="50" max="100" />
+              <p class="price-value">9.99</p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <section class="section featured">
+        <div class="title">
+          
+        </div>
+        <div class="featured-center section-center"></div>
+        
+      </section>
+      <section class="all">
+        <div class="allProducts">
+          
+        </div>
+    </div>
+    
+
+    <div class="sidebar-container">
+      <div class="sidebar-container-links">
+        <li class="links-Pages-Sidebar"><a href="index.html">Home</a></li>
+        <li class="links-Pages-Sidebar"><a href="shop.html">Shop</a></li>
+        <li class="links-Pages-Sidebar"><a href="about.html">About</a></li>
+      </div>
+    </div>
+
+    <div class="cart-overlay">
+      <aside class="cart">
+        <button class="cart-close">
+          <i class="fas fa-times"></i>
+        </button>
+        
+        <!-- cart items -->
+        <div class="cart-items"></div>
+        <!-- footer -->
+        <footer>
+          <h3 class="cart-total text-slanted"></h3>
+          <button class="cart-checkout btn">checkout</button>
+        </footer>
+      </aside>
+    </div>
+
+    <script type="module" src="../src/shop.js"></script>
+  </body>
+</html>
