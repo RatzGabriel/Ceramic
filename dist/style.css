@@ -85,6 +85,22 @@ nav {
   width: 30%;
 }
 
+.total-btn {
+  height: 10vh;
+}
+
+.container-checkout {
+  display: flex;
+  color: black;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.single-item-checkout {
+  margin-top: 1em;
+  text-align: center;
+}
+
 /* Shop */
 .textHeroShop {
   text-align: center;
