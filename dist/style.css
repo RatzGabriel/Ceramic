@@ -62,11 +62,12 @@ nav {
 
 .hero-container {
   background-image: linear-gradient(#5e5b5b, white);
-  height: 100vh;
+  height: 100%;
   margin-top: -10vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .textHero {
@@ -209,6 +210,15 @@ nav {
   height: 100%;
 } */
 
+.p {
+  font-size: 0.3em;
+}
+.filter-error {
+  color: black;
+  font-size: 3em;
+  margin-top: 3em;
+}
+
 .video-container {
   width: 50%;
   z-index: 1;
@@ -218,6 +228,7 @@ nav {
   display: flex;
   height: 50%;
   width: 100%;
+  justify-content: center;
 }
 
 .allProducts {
@@ -420,6 +431,10 @@ nav {
   z-index: 999;
 }
 
+.filter {
+  padding-top: 10em;
+}
+
 @media screen and (max-width: 768px) {
   .allProducts {
     align-items: center;
@@ -434,8 +449,7 @@ nav {
     margin: 0;
     padding: 0;
   }
-  .cart {
-  }
+
   .cart-item-name {
     font-size: 2em;
     padding-bottom: 0.3em;
@@ -470,9 +484,7 @@ nav {
   }
 
   .h1 {
-    padding-top: 12em;
     text-align: center;
-    width: 90%;
     color: white;
   }
   .cartButton {
@@ -483,15 +495,13 @@ nav {
   .hamburgerButton {
     visibility: visible;
     z-index: 10;
+    padding: 0em 1em;
   }
   nav {
     justify-content: space-around;
   }
   .logo {
-    width: 8em;
-    height: 8em;
-    margin-top: 13em;
-    border-radius: 50%;
+    visibility: hidden;
   }
 
   .image-featured-container {
@@ -500,7 +510,7 @@ nav {
   }
 
   .cart-overlay.show {
-    min-width: 60%;
+    min-width: 80%;
     z-index: 999;
     height: 100%;
     display: flex;
@@ -533,4 +543,29 @@ nav {
     flex-direction: column;
     margin-top: 60em;
   }
+
+  .p {
+    font-size: 0.3em;
+    padding-bottom: 3em;
+    color: black;
+  }
+  .linksPageContainer {
+    width: 0%;
+  }
+  .darkModeBtn {
+    z-index: 999;
+  }
+  .filter {
+    padding-top: 0em;
+  }
+}
+
+.dark {
+  background-color: black;
+  background-image: none;
+  color: white;
+}
+
+.darkModeBtn {
+  z-index: 999;
 }

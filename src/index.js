@@ -13,7 +13,6 @@ let cart = getStorageItem("cart");
 let store = getStorageItem("store");
 
 const main = function () {
-  console.log(data);
   setupStore(data);
   let cart = getStorageItem("cart");
   let store = getStorageItem("store");
@@ -21,8 +20,6 @@ const main = function () {
   const featuredDiv = getElement(".featured-center");
   displayItems(featuredDiv, featured);
   cart.forEach((element) => {
-    console.log("allproductsCart", cart);
-    console.log("ele", element);
     addToCartDOM(element);
   });
   setStorageItem("cart", cart);

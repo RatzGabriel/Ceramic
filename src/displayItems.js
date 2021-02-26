@@ -8,7 +8,7 @@ const displayItems = function (div, products) {
       return `<article class="product">
         <div class="product-container">
           
-      <a href="singleProduct.html?id=${item.id}" class="product-icon" >
+      <a href="singleProduct.html?${item.id} class="product-icon" >
       <img src="${item.src}" class="product-img img" data-id="${
         item.id
       }" alt="${item.title}" />    
@@ -32,7 +32,8 @@ const displayItems = function (div, products) {
   const test = document.querySelectorAll("#tes");
   test.forEach((element) => {
     element.addEventListener("click", function () {
-      addToCart(element);
+      console.log("cartElement", element);
+      addToCart(element.dataset.id);
     });
   });
   const productImg = document.querySelectorAll(".product-img");

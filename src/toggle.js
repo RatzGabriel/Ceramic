@@ -22,4 +22,17 @@ const openCart = () => {
   cartOverlay.classList.add("show");
 };
 
-export default { toggleCartBtn, closeCartBtn, openCart, toggleHamburger };
+const darkModeBtn = getElement(".darkModeBtn");
+darkModeBtn.addEventListener("click", function () {
+  const heroContainer = getElement(".hero-container");
+  console.log(heroContainer);
+  heroContainer.classList.toggle("dark");
+});
+
+export default {
+  toggleCartBtn,
+  closeCartBtn,
+  openCart,
+  toggleHamburger,
+  darkModeBtn,
+};

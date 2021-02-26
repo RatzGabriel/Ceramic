@@ -30,6 +30,6 @@ function test(element) {
 }
 
 cart.forEach((element) => {
-  console.log("ele", element);
+  console.log("eleeeeeee", element);
   test(element);
 });
