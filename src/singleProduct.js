@@ -12,8 +12,10 @@ let store = getStorageItem("store");
 cart.forEach((element) => {
   addToCartDOM(element);
 });
+console.log("test");
 
 window.addEventListener("DOMContentLoaded", async function () {
+  console.log("test");
   const urlID = window.location.search;
 
   const regEx = /[0-9]+/;
@@ -48,5 +50,3 @@ window.addEventListener("DOMContentLoaded", async function () {
     }
   }
 });
-
-onload = "onload()";

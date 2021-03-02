@@ -6,7 +6,7 @@ const displayItems = function (div, products) {
   allProducts.innerHTML = products
     .map((item) => {
       return `<article class="product">
-        <div class="product-container">
+      <div class="product-container">
           
       <a href="singleProduct.html?${item.id} class="product-icon" >
       <img src="${item.src}" class="product-img img" data-id="${
